@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.GameFinishedFragment">
+
+
+    <TextView
+        android:id="@+id/results"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:shadowColor="@color/orange_medium"
+        android:text="@string/results"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:background="@drawable/my_border3"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title_needrightanswers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_border3"
+        android:text="Правильных ответов нужно:"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/results"/>
+
+    <TextView
+        android:id="@+id/tv_needrightanswers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/needrightanswers"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_needrightanswers"/>
+
+
+    <TextView
+        android:id="@+id/title_score_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Твой результат:"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:background="@drawable/my_border3"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_needrightanswers" />
+
+    <TextView
+        android:id="@+id/tv_score_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/yourscore"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_score_answer" />
+
+    <TextView
+        android:id="@+id/title_need_rightansw_percents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Нужно набрать правильных ответов:"
+        android:gravity="center"
+        android:background="@drawable/my_border3"
+        android:layout_marginStart="20dp"
+        android:padding="5dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_score_answer" />
+
+    <TextView
+        android:id="@+id/tv_need_rightansw_percents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/need_rightansw_percents"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_need_rightansw_percents" />
+
+    <TextView
+        android:id="@+id/title_your_percentRightansw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Твой процент правильных овтетов:"
+        android:gravity="center"
+        android:background="@drawable/my_border3"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_need_rightansw_percents" />
+
+    <TextView
+        android:id="@+id/tv_your_percentRightansw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="%s"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_your_percentRightansw" />
+
+
+    <ImageView
+        android:id="@+id/game_result_img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_your_percentRightansw"
+        tools:src="@drawable/greatresult" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_startagain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Начать заново"
+        android:textColor="@color/white"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

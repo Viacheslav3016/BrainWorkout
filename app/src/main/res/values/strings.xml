@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">BrainWorkout</string>
+    <string name="title">BrainWorkout</string>
+    <string name="smartphrase">Все, что познается, имеет число, ибо невозможно ни понять ничего, ни познать без него.</string>
+    <string name="discription">Перед вами три фигуры. Два квадрата и треугольник. В одном квадрате будет число, во втором квадрате – знак вопроса. А в треугольнике – финальный ответ. Нужно чтобы сумма в двух квадратах была равна сумме в треугольнике. Для этого необходимо выбрать число из вариантов. Не забывайте про время. Удачи! </string>
+    <string name="button_understand">Понятно</string>
+    <string name="titleofrules">Правила игры:</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="chooselevel">Выбор уровня сложности:</string>
+    <string name="test">Test</string>
+    <string name="easy">easy</string>
+    <string name="medium">medium</string>
+    <string name="hard">hard</string>
+    <string name="number_right_answers">Правильных ответов %s (минимум %s)</string>
+    <string name="timer">00:00</string>
+    <string name="question">&amp;#63</string>
+    <string name="needrightanswers">%s</string>
+    <string name="yourscore">%s</string>
+    <string name="need_rightansw_percents">%s</string>
+    <string name="results">Результат:</string>
 </resources>
